@@ -86,14 +86,8 @@ def update():
         if enemy.colliderect(shooter):
             isGameOver = True
             message = 'YOU LOSE'
-        
-        if enemy.y > 650 and not isGameOver:
-            # isGameOver = True
-            # message = 'YOU LOSE'
 
-            score -= 1
-
-    if score == 10:
+    if score == 2:
         if not changeLevel:
             nextLevel()
 
